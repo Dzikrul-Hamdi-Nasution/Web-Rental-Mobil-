@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+    <title>Menu</title>
+  </head>
+  <body class="bg-light">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+     <div class="container">   
+      
+    <a id="nama" class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <a id="saldo" class="navbar-brand" href="#"></a>
+        <a class="nav-link js-scroll-trigger" href="history.html"><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN</a>
+        <a data-toggle="modal" data-target="#topup" class="nav-link js-scroll-trigger" href="#"><i ></i>ISI SALDO<span class="sr-only">(current)</span></a>
+        <a onclick="keluar()" class="nav-link js-scroll-trigger" href="#"><i ></i>LOG OUT<span class="sr-only">(current)</span></a>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+   <div class="food-menu">
+    <div class="container">
+      <h2>KATALOG</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/mobil_1.png" alt="Card image cap" width="200"
+            height="160">
+            <div class="card-body">
+              <h5 class="card-title">XENIA</h5>
+             
+              <p class="card-text">Jumlah Stok
+                <input type="text"  id="stok_1" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+              </p>
+
+               <span class="input-group-btn">
+                <form class="form-snipper">
+                  
+                </form> 
+              </span>
+              
+              <li data-toggle="modal"  data-target="#see_1" class="btn btn-warning">See More</li>
+                <li data-toggle="modal" data-target="#mydaftar" class="btn btn-success">Pesan</li>
+              
+ 
+              
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/mobil_2.png" alt="Card image cap" width="200"
+            height="160">
+            <div class="card-body">
+              <h5 class="card-title">AVANZA</h5>
+              <p class="card-text">Jumlah Stok
+                <input type="text"  id="stok_2" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+              </p>
+
+                <span class="input-group-btn">
+                <form class="form-snipper">
+                  
+                </form> 
+              </span>
+              
+              <li data-toggle="modal"  data-target="#see_2" class="btn btn-warning">See More</li>
+                <li data-toggle="modal" id="tombol_2" data-target="#mydaftar2" class="btn btn-success">Pesan</li>
+                
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/mobil_3.png" alt="Card image cap" width="200"
+            height="160">
+            <div class="card-body">
+              <h5 class="card-title">GRAND NEW INNOVA</h5>
+              <p class="card-text">Jumlah Stok
+                <input type="text"  id="stok_3" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+              </p>
+
+               <span class="input-group-btn">
+                <form class="form-snipper">
+                
+                </form> 
+              </span>
+              
+              <li data-toggle="modal"  data-target="#see_3" class="btn btn-warning">See More</li>
+                <li data-toggle="modal" id="tombol_3" data-target="#mydaftar3" class="btn btn-success">Pesan</li>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/mobil_4.png" alt="Card image cap"width="200"
+            height="160">
+            <div class="card-body">
+              <h5 class="card-title">AGYA</h5>
+              <p class="card-text">Jumlah Stok
+                <input type="text"  id="stok_4" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+              </p>
+
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  
+                </form> 
+              </span>
+              
+              <li data-toggle="modal"  data-target="#see_4" class="btn btn-warning">See More</li>
+                <li data-toggle="modal" id="tombol_4" data-target="#mydaftar4" class="btn btn-success">Pesan</li>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mobil_5.png" alt="Card image cap"width="200"
+           height="160">
+           <div class="card-body">
+             <h5 class="card-title">INNOVA REBORN</h5>
+             <p class="card-text">Jumlah Stok
+              <input type="text"  id="stok_5" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+            </p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                
+               </form> 
+             </span>
+             
+             <li data-toggle="modal"  data-target="#see_5" class="btn btn-warning">See More</li>
+               <li data-toggle="modal" id="tombol_5" data-target="#mydaftar5" class="btn btn-success">Pesan</li>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mobil_6.png" alt="Card image cap"width="200"
+           height="160">
+           <div class="card-body">
+             <h5 class="card-title">KIA TRAVELLO</h5>
+             <p class="card-text">Jumlah Stok
+              <input type="text"  id="stok_6" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+            </p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                
+                 
+               </form> 
+             </span>
+             
+             <li data-toggle="modal"  data-target="#see_6" class="btn btn-warning">See More</li>
+               <li data-toggle="modal" id="tombol_6" data-target="#mydaftar6" class="btn btn-success">Pesan</li>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mobil_7.png" alt="Card image cap"width="200"
+           height="160">
+           <div class="card-body">
+             <h5 class="card-title">ISUZU ELF LONG 19 SEAT</h5>
+             <p class="card-text">Jumlah Stok
+              <input type="text"  id="stok_7" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+            </p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                
+               </form> 
+             </span>
+             
+             <li data-toggle="modal"  data-target="#see_7" class="btn btn-warning">See More</li>
+               <li data-toggle="modal" id="tombol_7" data-target="#mydaftar7" class="btn btn-success">Pesan</li>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mobil_8.png" alt="Card image cap"width="200"
+           height="160">
+           <div class="card-body">
+             <h5 class="card-title">TOYOTA HIACE 15 SEAT</h5>
+             <p class="card-text">Jumlah Stok
+              <input type="text"  id="stok_8" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+            </p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+            
+               </form> 
+             </span>
+             
+             <li data-toggle="modal"  data-target="#see_8" class="btn btn-warning">See More</li>
+               <li data-toggle="modal" id="tombol_8" data-target="#mydaftar8" class="btn btn-success">Pesan</li>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/mobil_9.png" alt="Card image cap"width="200"
+           height="160">
+           <div class="card-body">
+             <h5 class="card-title">BUS PARIWISATA</h5>
+             <p class="card-text">Jumlah Stok
+              <input type="text"  id="stok_9" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+            </p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 
+               </form> 
+             </span>
+             
+             <li data-toggle="modal"  data-target="#see_9" class="btn btn-warning">See More</li>
+               <li data-toggle="modal" id="tombol_9" data-target="#mydaftar9" class="btn btn-success">Pesan</li>
+           </div>
+         </div>
+        </div>
+
+      
+
+       </div>
+     </div>
+   </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+
+
+   
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    
+    <script src="menu_awal.js"></script>
+
+
+
+    
+    <div id="login" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Masukkan Nomor Kendali</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Kendali</label>
+          <input type="number" class="form-control" id="kendali" placeholder="Number">
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+           <button onclick="masuk()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="see_1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Mini Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="6 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Mobil :</label>
+          <input type="text"  class="form-control" placeholder="2017" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Kapasitas Mesin :</label>
+          <input type="text"  class="form-control" placeholder="1500 cc" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Mini Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="6 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Mobil :</label>
+          <input type="text"  class="form-control" placeholder="2016" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Kapasitas Mesin :</label>
+          <input type="text"  class="form-control" placeholder="1400 cc" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Mini Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="6 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Mobil :</label>
+          <input type="text"  class="form-control" placeholder="2018" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Kapasitas Mesin :</label>
+          <input type="text"  class="form-control" placeholder="1590 cc" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Mini Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="3 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Mobil :</label>
+          <input type="text"  class="form-control" placeholder="2017" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Kapasitas Mesin :</label>
+          <input type="text"  class="form-control" placeholder="1200 cc" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_5" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Mini Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="6 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Mobil :</label>
+          <input type="text"  class="form-control" placeholder="2018" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Kapasitas Mesin :</label>
+          <input type="text"  class="form-control" placeholder="1600 cc" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_6" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="13 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tipe Bangku :</label>
+          <input type="text"  class="form-control" placeholder="2 - 2" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Bus :</label>
+          <input type="text"  class="form-control" placeholder="2016" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Pemandu Wisata :</label>
+          <input type="text"  class="form-control" placeholder="1 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Solar" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_7" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="19 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tipe Bangku :</label>
+          <input type="text"  class="form-control" placeholder="2 - 2" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Bus :</label>
+          <input type="text"  class="form-control" placeholder="2017" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Pemandu Wisata :</label>
+          <input type="text"  class="form-control" placeholder="1 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Bensin" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_8" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="15 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tipe Bangku :</label>
+          <input type="text"  class="form-control" placeholder="1 - 2" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Bus :</label>
+          <input type="text"  class="form-control" placeholder="2017" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Pemandu Wisata :</label>
+          <input type="text"  class="form-control" placeholder="1 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Solar" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="see_9" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Spesifikasi Lengkap</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Kategori :</label>
+          <input type="text"  class="form-control" placeholder="Bus" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Jumlah Penumpang :</label>
+          <input type="text"  class="form-control" placeholder="45 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tipe Bangku :</label>
+          <input type="text"  class="form-control" placeholder="2 - 2" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tahun Bus :</label>
+          <input type="text"  class="form-control" placeholder="2016" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Pemandu Wisata :</label>
+          <input type="text"  class="form-control" placeholder="2 Orang" readonly>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Bahan Bakar :</label>
+          <input type="text"  class="form-control" placeholder="Solar" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div id="topup" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h4 class="modal-title">Kode Referal Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Tunjukkan Kode ini kepada Admin Rental Mobil Untuk Top-Up Saldo Anda ( Max 5 Juta )</label>
+          <input type="text" id="id_top_up" class="form-control"  placeholder="Kode" readonly>
+        </div>
+      
+        </div>
+      
+      </form>
+          </div>
+          <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <div id="mydaftar" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_1" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_1" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_1" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_1" onclick="harga_1()">
+            <option value="Dengan Driver">Dengan Driver</option>
+            <option value="Tanpa Driver">Tanpa Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_1" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+           <button onclick="e_money_1()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan1()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="mydaftar2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_2" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_2" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_2" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_2" onclick="harga_2()">
+            <option value="Dengan Driver">Dengan Driver</option>
+            <option value="Tanpa Driver">Tanpa Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_2" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_2()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan2()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_3" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_3" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_3" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_3" onclick="harga_3()">
+            <option value="Dengan Driver">Dengan Driver</option>
+            <option value="Tanpa Driver">Tanpa Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_3" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_3()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan3()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_4" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_4" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_4" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_4" onclick="harga_4()">
+            <option value="Dengan Driver">Dengan Driver</option>
+            <option value="Tanpa Driver">Tanpa Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_4" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_4()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan4()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar5" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_5" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_5" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_5" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_5" onclick="harga_5()">
+            <option value="Dengan Driver">Dengan Driver</option>
+            <option value="Tanpa Driver">Tanpa Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_5" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_5()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan5()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="mydaftar6" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_6" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_6" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_6" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_6" onclick="harga_6()">
+            <option value="Dengan Driver">Dengan Driver</option>
+           
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_6" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_6()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan6()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar7" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_7" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_7" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_7" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_7" onclick="harga_7()">
+            <option value="Dengan Driver">Dengan Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_7" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_7()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan7()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar8" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_8" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_8" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_8" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_8" onclick="harga_8()">
+            <option value="Dengan Driver">Dengan Driver</option>
+     
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_8" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_8()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan8()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mydaftar9" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Isi Data Diri Anda</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+         <div class="form-group">
+          <label for="exampleInputEmail1">Nama Lengkap (Sesuai KTP)</label>
+          <input type="text" class="form-control" id="Fullname_9" placeholder="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor KTP</label>
+          <input type="number" class="form-control" id="nomor_KTP_9" placeholder="Nomor KTP">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nomor Handphone / WA</label>
+          <input type="number" class="form-control" id="nomor_WA_9" placeholder="Nomor Handphone / WA">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Service Driver</label>
+          <select name="diskon" id="s_9" onclick="harga_9()">
+            <option value="Dengan Driver">Dengan Driver</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total Biaya :</label>
+          <input type="text" class="form-control" id="total_9" readonly>
+        </div>
+      </form>
+          </div>
+          <div class="modal-footer">
+            <button onclick="e_money_9()" type="button" class="btn btn-success" data-dismiss="modal">E-Money</button>
+           <button onclick="pesan9()" type="button" class="btn btn-success" data-dismiss="modal">Pesan</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
+
+
+var config = {
+  apiKey: "AIzaSyATL6M7rXAfXoXbp9yFjjHShVKa6iy2Jek",
+  authDomain: "rental-mobil-kita.firebaseapp.com",
+  databaseURL: "https://rental-mobil-kita-default-rtdb.firebaseio.com",
+  projectId: "rental-mobil-kita",
+  storageBucket: "rental-mobil-kita.appspot.com",
+  messagingSenderId: "100479261690",
+  appId: "1:100479261690:web:28fd92b09df15ec2cfa243",
+  measurementId: "G-0ZQ5DDPGVE"
+};
+firebase.initializeApp(config);
+
+
+
+$(document).ready(function() {
+
+
+
+  $("#harga1").val("Rp - ");
+  $("#harga2").val("Rp - ");
+  $("#harga3").val("Rp - ");
+  $("#harga4").val("Rp - ");
+  $("#harga5").val("Rp - ");
+  $("#harga6").val("Rp - ");
+  $("#harga7").val("Rp - ");
+  $("#harga8").val("Rp - ");
+  $("#harga9").val("Rp - ");
+
+  
+
+  Cek_Stok();
+  cek_harga();
+  cek_harga_lepas();
+  
+});
+
+let minuman = [];
+let mobil = [];
+let harga = [];
+let harga_lepas = [];
+let kunci=0;
+var pecah_id;
+var pelayanan;
+var tampil_harga;
+var nama;
+var ktp;
+var wa;
+var kode_urut_mobil;
+var saldo_akhir;
+var saldo_user;
+let kondisi=0;
+var metode;
+
+function keluar(){
+  firebase.auth().signOut();
+ 
+}
+
+firebase.auth().onAuthStateChanged(function(user) {
+  var user = firebase.auth().currentUser;
+
+          if (user) {
+              //alert("Selamat Datang ")
+              //window.location.replace('ulasan.html')
+              var email_id = user.email;           
+              var res = email_id.split("@");
+              pecah_id = res[0];  
+              var messagesRef = firebase.database();
+              var ref = messagesRef.ref("user").child(pecah_id).child("saldo");
+              ref.on("value", function(snapshot) {
+                  snapshot.forEach(function(childSnapshot) {
+                      data = childSnapshot.val();
+                      console.log(data);
+                      document.getElementById("saldo").innerHTML ="Saldo Rp "+ data;
+                      saldo_akhir=data;
+                  });
+              })
+              document.getElementById("nama").innerHTML = pecah_id;
+              nilai_id=Math.floor(Math.random() * 10000);
+              $("#id_top_up").val(pecah_id+"-"+nilai_id);
+            
+              
+          } else {
+              // No user is signed in.
+              window.location.replace('index.html')
+             
+              //
+          }
+  });
+
+
+
+
+function Cek_Stok() {
+  var messagesRef = firebase.database();
+  var tampung;
+  for (let i = 1; i <= 9; i++) {
+
+      tampung = "mobil_" + i;
+
+      var ref = messagesRef.ref("daftar_mobil").child(tampung);
+      ref.on("value", function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+              data = childSnapshot.val();
+              console.log(data);
+
+              if (i == 1) {
+                  mobil_1 = data;
+                  $("#stok_1").val(mobil_1);
+              }
+              if (i == 2) {
+                  mobil_2 = data;
+                  $("#stok_2").val(mobil_2);
+              }
+              if (i == 3) {
+                  mobil_3 = data;
+                  $("#stok_3").val(mobil_3);
+              }
+              if (i == 4) {
+                  mobil_4 = data;
+                  $("#stok_4").val(mobil_4);
+              }
+              if (i == 5) {
+                  mobil_5 = data;
+                  $("#stok_5").val(mobil_5);
+              }
+              if (i == 6) {
+                  mobil_6 = data;
+                  $("#stok_6").val(mobil_6);
+              }
+              if (i == 7) {
+                  mobil_7 = data;
+                  $("#stok_7").val(mobil_7);
+              }
+              if (i == 8) {
+                  mobil_8 = data;
+                  $("#stok_8").val(mobil_8);
+              }
+              if (i == 9) {
+                  mobil_9 = data;
+                  $("#stok_9").val(mobil_9);
+              }
+          });
+      })
+  }
+}
+
+function cek_harga() {
+  var messagesRef = firebase.database();
+  var tampung;
+  for (let i = 1; i <= 9; i++) {
+
+      tampung = "mobil_" + i;
+
+      var ref = messagesRef.ref("harga_mobil").child(tampung);
+      ref.on("value", function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+              data = childSnapshot.val();
+              console.log(data);
+              harga[i] = data;
+          });
+      })
+  }
+}
+
+function cek_harga_lepas() {
+  var messagesRef = firebase.database();
+  var tampung;
+  for (let i = 1; i <= 9; i++) {
+
+      tampung = "mobil_" + i;
+
+      var ref = messagesRef.ref("harga_mobil_lepas").child(tampung);
+      ref.on("value", function(snapshot) {
+          snapshot.forEach(function(childSnapshot) {
+              data = childSnapshot.val();
+              console.log(data);
+              harga_lepas[i] = data;
+          });
+      })
+  }
+}
+
+for (let i = 1; i <= 9; i++) {
+  mobil[i] = 0;
+}
+
+
+function harga_1() {
+  pelayanan=s_1.value;
+  tampil_harga=harga_lepas[1];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_1").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[1];
+    $("#total_1").val("Rp " +tampil_harga);
+  }
+}
+function e_money_1(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan1();
+    }
+  } else {  }
+}
+
+
+function pesan1() {
+  nama = document.getElementById("Fullname_1").value;
+  ktp = document.getElementById("nomor_KTP_1").value;
+  wa = document.getElementById("nomor_WA_1").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_1-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Xenia";
+  kode_urut_mobil="mobil_1";
+  submit();
+}
+
+function submit(){
+  var messagesRef = firebase.database();
+  if(kondisi==1){
+    firebase.database().ref("user").child(pecah_id).child("saldo").set({
+      nilai:saldo_user,
+    });
+    metode="E-Money"
+    kondisi=0;
+  }
+  else{
+    metode="CASH"
+  }
+  firebase.database().ref("history").child(nilai_id).set({
+    mobil:jenis_mobil,
+    jumlah:metode,
+    nama: nama,
+    ktp:  ktp,
+    wa: wa,
+    waktu: pecah,
+    harga:tampil_harga,
+    stok:stok_saat_ini,
+    service:pelayanan,
+    kode:nilai_id,
+  });
+  firebase.database().ref("daftar_mobil").child(kode_urut_mobil).set({
+    nilai:stok_saat_ini,
+  });
+  firebase.database().ref("user").child(pecah_id).child("key_last").set({
+    nilai:nilai_id,
+  });
+  firebase.database().ref("user").child(pecah_id).child("mobil_last").set({
+    nilai:jenis_mobil,
+  });
+  firebase.database().ref("user").child(pecah_id).child("nama_last").set({
+    nilai:nama,
+  });
+
+ 
+  
+
+  firebase.database().ref("user").child(pecah_id).child("riwayat").child(nilai_id).set({
+    mobil:jenis_mobil,
+    jumlah:metode,
+    nama: nama,
+    ktp:  ktp,
+    wa: wa,
+    waktu: pecah,
+    harga:tampil_harga,
+    service:pelayanan,
+  });
+  alert("Pesanan Telah Diterima")
+}
+
+
+
+function harga_2() {
+  pelayanan=s_2.value;
+  tampil_harga=harga_lepas[2];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_2").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[2];
+    $("#total_2").val("Rp " +tampil_harga);
+  }
+}
+function e_money_2(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan2();
+    }
+  } else {  }
+}
+function pesan2() {
+   nama = document.getElementById("Fullname_2").value;
+   ktp = document.getElementById("nomor_KTP_2").value;
+   wa = document.getElementById("nomor_WA_2").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_2-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Avanza";
+  kode_urut_mobil="mobil_2";
+  submit();
+}
+
+function harga_3() {
+  pelayanan=s_3.value;
+  tampil_harga=harga_lepas[3];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_3").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[3];
+    $("#total_3").val("Rp " +tampil_harga);
+  }
+}
+function e_money_3(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan3();
+    }
+  } else {  }
+}
+function pesan3() {
+   nama = document.getElementById("Fullname_3").value;
+   ktp = document.getElementById("nomor_KTP_3").value;
+   wa = document.getElementById("nomor_WA_3").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_3-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Grand New Innova";
+  kode_urut_mobil="mobil_3";
+  submit();
+}
+
+
+function harga_4() {
+  pelayanan=s_4.value;
+  tampil_harga=harga_lepas[4];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_4").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[4];
+    $("#total_4").val("Rp " +tampil_harga);
+  }
+}
+function e_money_4(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan4();
+    }
+  } else {  }
+}
+function pesan4() {
+   nama = document.getElementById("Fullname_4").value;
+   ktp = document.getElementById("nomor_KTP_4").value;
+   wa = document.getElementById("nomor_WA_4").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_4-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="AGYA";
+  kode_urut_mobil="mobil_4";
+  submit();
+}
+ 
+function harga_5() {
+  pelayanan=s_5.value;
+  tampil_harga=harga_lepas[5];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_5").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[5];
+    $("#total_5").val("Rp " +tampil_harga);
+  }
+}
+function e_money_5(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan5();
+    }
+  } else {  }
+}
+function pesan5() {
+   nama = document.getElementById("Fullname_5").value;
+   ktp = document.getElementById("nomor_KTP_5").value;
+   wa = document.getElementById("nomor_WA_5").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_5-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Innova Reborn";
+  kode_urut_mobil="mobil_5";
+  submit();
+}
+
+
+function harga_6() {
+  pelayanan=s_6.value;
+  tampil_harga=harga[6];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_6").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[6];
+    $("#total_6").val("Rp " +tampil_harga);
+  }
+}
+function e_money_6(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan6();
+    }
+  } else {  }
+}
+function pesan6() {
+   nama = document.getElementById("Fullname_6").value;
+   ktp = document.getElementById("nomor_KTP_6").value;
+   wa = document.getElementById("nomor_WA_6").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_6-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="KIA Travello";
+  kode_urut_mobil="mobil_6";
+  submit();
+}
+
+
+function harga_7() {
+  pelayanan=s_7.value;
+  tampil_harga=harga[7];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_7").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[7];
+    $("#total_7").val("Rp " +tampil_harga);
+  }
+}
+function e_money_7(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan7();
+    }
+  } else {  }
+}
+function pesan7() {
+   nama = document.getElementById("Fullname_7").value;
+   ktp = document.getElementById("nomor_KTP_7").value;
+   wa = document.getElementById("nomor_WA_7").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_7-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Isuzu ELF";
+  kode_urut_mobil="mobil_7";
+  submit();
+}
+
+function harga_8() {
+  pelayanan=s_8.value;
+  tampil_harga=harga[8];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_8").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[8];
+    $("#total_8").val("Rp " +tampil_harga);
+  }
+}
+function e_money_8(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan8();
+    }
+  } else {  }
+}
+function pesan8() {
+   nama = document.getElementById("Fullname_8").value;
+   ktp = document.getElementById("nomor_KTP_8").value;
+   wa = document.getElementById("nomor_WA_8").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_8-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Toyota Hiache";
+  kode_urut_mobil="mobil_8";
+  submit()
+}
+
+
+function harga_9() {
+  pelayanan=s_9.value;
+  tampil_harga=harga[9];
+  if(pelayanan=="Dengan Driver"){
+    $("#total_9").val("Rp " + tampil_harga);
+  }
+  if(pelayanan=="Tanpa Driver"){
+    tampil_harga=harga[9];
+    $("#total_9").val("Rp " +tampil_harga);
+  }
+}
+function e_money_9(){
+  if (confirm("Apakah Anda ingin memesan dengan E-Money ?")) {
+    saldo_user=parseInt(saldo_akhir)-parseInt(tampil_harga);
+    if(saldo_user<0){
+      alert("Saldo Anda tidak Cukup, Silahkan Ganti metode pembayaran atau lakukan TopUp Saldo")
+    }
+    else{
+      kondisi=1;
+      pesan9();
+    }
+  } else {  }
+}
+function pesan9() {
+   nama = document.getElementById("Fullname_9").value;
+   ktp = document.getElementById("nomor_KTP_9").value;
+   wa = document.getElementById("nomor_WA_9").value;
+  var d = Date();
+  var res = d.split("G");
+  pecah = res[0];  
+  stok_saat_ini=mobil_9-1;
+  nilai_id=Math.floor(Math.random() * 10000);
+  jenis_mobil="Bus Pariwisata";
+  kode_urut_mobil="mobil_9";
+  submit()
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+  
+    <title>Pesanan</title>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+     <div class="container">   
+    <a class="navbar-brand" href="#">Rental Mobil </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <li data-toggle="modal"  data-target="#see_1" class="btn btn-warning">On Progress</li>
+        </li>
+        <a onclick="keluar()" class="nav-link js-scroll-trigger" href="#"><i ></i>LOG OUT<span class="sr-only">(current)</span></a>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12 col-md-12 mt-5">
+  			<h3><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN</h3>
+  			<hr class="hr-menu">
+
+  			<table class="table table-borded table-responsive table-striped " id="table-list">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Jenis Mobil</th>
+                        <th scope="col">Nama Pemesan</th>
+                        <th scope="col">No.KTP</th>
+                          <th scope="col">No.Telepon</th>
+                          <th scope="col">Pembayaran</th>
+                          <th scope="col">Waktu</th>
+                          <th scope="col">Harga</th>
+                          <th scope="col">Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            
+		   </div>
+		</div>
+	</div>
+
+
+    
+    <div id="see_1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Masukkan Kode :</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+           <div class="form-group">
+            <label for="exampleInputEmail1">Masukkan Kode Kendali Anda</label>
+            <input type="number" id="nomor_kendali"  class="form-control" placeholder="Number" >
+            <div class="form-group">
+                <label for="exampleInputEmail1">Rating Anda</label>
+                <select name="diskon" id="nilai_rating" onclick="rating()">
+                  <option value="5">Sangat Memuaskan</option>
+                  <option value="4">Memuaskan</option>
+                  <option value="3">Cukup</option>
+                  <option value="2">Standart</option>
+                  <option value="1">Buruk</option>
+              </select>
+              </div>
+          </div>
+        </form>
+            </div>
+            <div class="modal-footer">
+                <button onclick="prog()" type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+
+
+    
+    </head>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script src="hsitory.js"></script>
+
+ 
+<script>
+//apply
+
+
+</script>
+
+    
+  </body>
+</html>
