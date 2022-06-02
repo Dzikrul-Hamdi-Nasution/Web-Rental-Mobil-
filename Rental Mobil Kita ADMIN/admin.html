@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+  
+    <title>Pesanan</title>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+     <div class="container">   
+    <a class="navbar-brand" href="#">Rental Mobil </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <a data-toggle="modal" data-target="#harga" class="nav-link js-scroll-trigger" href="#"><i ></i>HARGA<span class="sr-only">(current)</span></a>
+       
+        <a data-toggle="modal" data-target="#stock" class="nav-link js-scroll-trigger" href="#"><i ></i>STOCK<span class="sr-only">(current)</span></a>
+       
+        <a data-toggle="modal" data-target="#topup" class="nav-link js-scroll-trigger" href="#"><i ></i>TOP UP<span class="sr-only">(current)</span></a>
+       
+          <a onclick="keluar()" class="nav-link js-scroll-trigger" href="#"><i ></i>LOG OUT<span class="sr-only">(current)</span></a>
+          
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12 col-md-12 mt-5">
+  			<h3><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN</h3>
+  			<hr class="hr-menu">
+
+  			<table id="tabel-status-alat" class="table table-bordered">
+			  <thead>
+			    <tr>
+			      <th scope="col">Jenis Mobil</th>
+			      <th scope="col">Nama Pemesan</th>
+			      <th scope="col">No.KTP</th>
+            <th scope="col">No.Telepon</th>
+            <th scope="col">Transaksi</th>
+            <th scope="col">Waktu</th>
+            <th scope="col">Harga</th>
+            <th scope="col">Sisa Stok</th>
+            <th scope="col">Service</th>
+            <th scope="col">KEY</th>
+			    </tr>
+			  </thead>			 
+			    <tr>   	
+			    </tr>          
+			  </tbody>        
+			</table>      
+		   </div>
+		</div>
+	</div>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12 col-md-12 mt-5">
+  			<h3><i class="fas fa-shopping-cart mr-2"></i>DAFTAR ULASAN</h3>
+  			<hr class="hr-menu">
+
+  			<table id="tabel-ulasan" class="table table-bordered">
+			  <thead>
+			    <tr>
+			      <th scope="col">NAMA</th>
+            <th scope="col">Jenis Mobil</th>
+			      <th scope="col">Rating ( 1 - 5 )</th>
+			    </tr>
+			  </thead>			 
+			    <tr>   	
+			    </tr>          
+			  </tbody>        
+			</table>      
+		   </div>
+		</div>
+	</div>
+
+
+  <div id="topup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Masukkan Kode Referal Pelanggan</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+       <div class="form-group">
+        <label for="exampleInputEmail1">ID Pelanggan</label>
+        <input type="text" class="form-control" id="Id-pelanggan" placeholder="cth : pelanggan - xxxxx">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Kode Unik</label>
+        <input onclick="cek()" type="number" class="form-control" id="kode-unik" placeholder="cth : xxxxx - 4246">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Jumlah Top-Up (Rp):</label>
+        <input type="number" class="form-control" id="jumlah-topup" placeholder="tanpa titik pemisah">
+      </div>
+    </form>
+        </div>
+        <div class="modal-footer">
+         <button onclick="konfirmasi()" type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="stock" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Pilih Kendaraan Untuk Update Stock</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Pilih Mobil</label>
+              <select name="diskon" id="j_mobil" onclick="jenis_mobil()">
+                <option value="mobil_1">Xenia</option>
+                <option value="mobil_2">Avanza</option>
+                <option value="mobil_3">Grand New Innova</option>
+                <option value="mobil_4">Agya</option>
+                <option value="mobil_5">Innova Reborn</option>
+                <option value="mobil_6">KIA Travello</option>
+                <option value="mobil_7">Isuzu Elf</option>
+                <option value="mobil_8">Toyota Hiace</option>
+                <option value="mobil_9">Bus Pariwisata</option>
+            </select>
+            </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Update Jumlah Kendaraan</label>
+        <input type="number" class="form-control" id="jumlah_wahana" placeholder="Masukkan Jumlah">
+      </div>
+    </form>
+        </div>
+        <div class="modal-footer">
+           <button onclick="update_wahana()" type="button" class="btn btn-success" data-dismiss="modal">Update</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="harga" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Pilih Kendaraan Untuk Update Harga</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Pilih Mobil</label>
+              <select name="diskon" id="j_mobil_2" onclick="jenis_mobil()">
+                <option value="mobil_1">Xenia</option>
+                <option value="mobil_2">Avanza</option>
+                <option value="mobil_3">Grand New Innova</option>
+                <option value="mobil_4">Agya</option>
+                <option value="mobil_5">Innova Reborn</option>
+                <option value="mobil_6">KIA Travello</option>
+                <option value="mobil_7">Isuzu Elf</option>
+                <option value="mobil_8">Toyota Hiace</option>
+                <option value="mobil_9">Bus Pariwisata</option>
+            </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Pilih Jenis Service</label>
+              <select name="diskon" id="h_mobil" onclick="jenis_service()">
+                <option value="harga_mobil_lepas">Tanpa Driver</option>
+                <option value="harga_mobil">Dengan Driver</option>
+            </select>
+            </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Update Harga Kendaraan</label>
+        <input type="number" class="form-control" id="harga_wahana" placeholder="Masukkan Harga baru">
+      </div>
+    </form>
+        </div>
+        <div class="modal-footer">
+           <button onclick="update_harga()" type="button" class="btn btn-success" data-dismiss="modal">Update</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script src="style.js"></script>
+
+    
+  </body>
+</html>
